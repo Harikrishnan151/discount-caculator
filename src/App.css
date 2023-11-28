@@ -1,38 +1,669 @@
-.App {
-  text-align: center;
+.App{
+  background-image: url('https://images.pexels.com/photos/2693212/pexels-photo-2693212.png?auto=compress&cs=tinysrgb&w=600');
+  height: 100%;
+  width: 100%;
+}
+#col {
+
+  background-image: linear-gradient(rgb(40, 184, 153), rgb(6, 151, 168), rgb(40, 184, 153));
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.text {
   color: white;
+  font-size: 4rem;
+  font-weight: 800;
+  padding: 11rem 1rem 0rem 8rem;
 }
 
-.App-link {
-  color: #61dafb;
+.text-1 {
+  color: bisque;
+  padding: 1rem 0rem 1rem 9rem;
+
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.container-fluid {
+  z-index: 1;
+  position: relative;
+}
+
+.thick-arrow {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: bisque;
+}
+
+.thick-arrow:after {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 4px;
+  position: absolute;
+  bottom: -13px;
+  background-color: black;
+  /* Adjust the color of the arrow here */
+}
+
+.thick-arrow span {
+  position: relative;
+  z-index: 1;
+}
+
+.col-6 button {
+  margin: 2rem 2rem 6rem 9rem;
+  width: 14rem;
+
+}
+
+.image img {
+  margin-top: 1rem;
+  height: 35rem;
+}
+
+.box {
+  height: 40rem;
+  width: 74rem;
+  border-radius: 2rem;
+  background-image: linear-gradient( rgb(254, 144, 158),rgb(243, 203, 121));
+  margin: 1rem 11rem -4rem 4rem;
+  position: absolute;
+  z-index: 2;
+}
+
+.text-2 {
+  color: white;
+  justify-content: center;
+  font-size: 3rem;
+  display: flex;
+  font-weight: 700;
+  margin: 4rem 0rem 1rem 0rem;
+}
+
+.text-3 {
+  display: flex;
+  justify-content: center;
+  color: black;
+  font: icon;
+}
+
+.box-2 {
+  text-align: center;
+  height: 22rem;
+  width: 27rem;
+  color: white;
+  font-size: 1.5rem;
+  background-color: white;
+  border-radius: 2rem;
+  
+}
+
+.box-3 {
+  background-color: rgb(40, 184, 153);
+  margin: 4rem 0rem 0rem 0rem;
+  border-radius: 2rem 2rem 0rem 0rem
+}
+
+.text-4 {
+  padding: 1rem 0rem 1rem 0rem;
+  font-weight: 800;
+}
+
+.text-5 {
+  color: black;
+  font-weight: 800;
+  font-size: 1.5rem;
+  margin: 3rem 0rem 1rem 0rem;
+}
+
+.number {
+  font-size: 5rem;
+  color: rgb(40, 184, 153);
+}
+
+#input-1{
+  margin: 4rem 0rem 0rem 0rem;
+    padding-left: 6rem;
+    
+}
+.buttons{
+  display: flex;
+  margin: 1rem 0rem 0rem -12rem;
+}
+#input-2{
+  margin-top: -2rem;
+}
+.save{
+  background-color: white;
+  height: 3.5rem;
+  width: 25rem;
+  border-radius: 6px;
+
+  font-weight: 800;
+  padding-left: 1.5rem;
+}
+
+@media screen  and (min-width:200px) and (max-width:320px) {
+  
+  .row{
+    flex-direction: column;
+   }
+   .box {
+    height: 65rem;
+    width: 320px;
+    border-radius: 0rem;
+    background-image: linear-gradient( rgb(254, 144, 158),rgb(243, 203, 121));
+    margin: 0rem 11rem -4rem 0rem;
+    position: absolute;
+    z-index: 2;
   }
-  to {
-    transform: rotate(360deg);
+  .inputs{
+    width: 300px;
+    margin: 3px;
+   overflow: hidden;
   }
+  .save{
+    width: 300px;
+    margin: 3px;
+
+  }
+  .box-2 {
+    text-align: center;
+    height: 15rem;
+    width: 18rem;
+    color: white;
+    font-size: 1.rem;
+    background-color: white;
+    border-radius: 2rem;
+    margin-left: 2px;
+    margin-top: -50px;
+    
+  }
+  .form{
+    margin-left: -90px;
+    width: 320px;
+  }
+  .buttons{
+    display: flex;
+    margin: 1rem 0rem 0rem -15rem;
+    width: 360px;
+   
+  }
+  .col-6 button {
+    margin: 2rem -5rem 6rem 10rem;
+    width: 14rem;
+  
+  }
+  .text-2 {
+    color: white;
+    justify-content: center;
+    font-size: 2rem;
+    display: flex;
+    font-weight: 700;
+    margin: 4rem 0rem 1rem 0rem;
+  }
+  
+  .text-3 {
+    display: flex;
+    font-size: 10px;
+    justify-content: center;
+    color: black;
+    font: icon;
+    margin-left: 17px;
+   
+  }
+  .number {
+    font-size: 2rem;
+    color: rgb(40, 184, 153);
+  }
+  
+ 
+}
+@media screen and (min-width:321px) and (max-width:360px)  {
+
+  .row{
+    flex-direction: column;
+   }
+   .box {
+    height: 65rem;
+    width: 360px;
+    border-radius: 0rem;
+    background-image: linear-gradient( rgb(254, 144, 158),rgb(243, 203, 121));
+    margin: 0rem 11rem -4rem 0rem;
+    position: absolute;
+    z-index: 2;
+  }
+  .inputs{
+    width: 340px;
+    margin: 3px;
+   overflow: hidden;
+  }
+  .save{
+    width: 340px;
+    margin: 3px;
+
+  }
+  .box-2 {
+    text-align: center;
+    height: 17rem;
+    width: 20rem;
+    color: white;
+    font-size: 1.rem;
+    background-color: white;
+    border-radius: 2rem;
+    margin-left: 10px;
+    margin-top: -70px;
+    
+  }
+  .form{
+    margin-left: -90px;
+    width: 360px;
+  }
+  .buttons{
+    display: flex;
+    margin: 1rem 0rem 0rem -15rem;
+    width: 360px;
+   
+  }
+  .col-6 button {
+    margin: 2rem -3rem 6rem 10rem;
+    width: 14rem;
+  
+  }
+  .text-2 {
+    color: white;
+    justify-content: center;
+    font-size: 2rem;
+    display: flex;
+    font-weight: 700;
+    margin: 4rem 0rem 1rem 0rem;
+  }
+  
+  .text-3 {
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    color: black;
+    font: icon;
+    margin-left: 17px;
+  }
+  .number {
+    font-size: 3rem;
+    color: rgb(40, 184, 153);
+  }
+
+}
+@media screen and (min-width:361px) and (max-width:375px)  {
+
+  .row{
+    flex-direction: column;
+   }
+   .box {
+    height: 65rem;
+    width: 375px;
+    border-radius: 0rem;
+    background-image: linear-gradient( rgb(254, 144, 158),rgb(243, 203, 121));
+    margin: 0rem 11rem -4rem 0rem;
+    position: absolute;
+    z-index: 2;
+  }
+  .inputs{
+    width: 350px;
+    margin: 3px;
+   overflow: hidden;
+  }
+  .save{
+    width: 350px;
+    margin: 3px;
+
+  }
+  .box-2 {
+    text-align: center;
+    height: 17rem;
+    width: 20rem;
+    color: white;
+    font-size: 1.rem;
+    background-color: white;
+    border-radius: 2rem;
+    margin-left: 15px;
+    margin-top: -70px;
+    
+  }
+  .form{
+    margin-left: -90px;
+    width: 360px;
+  }
+  .buttons{
+    display: flex;
+    margin: 1rem 0rem 0rem -14rem;
+    width: 360px;
+   
+  }
+  .col-6 button {
+    margin: 2rem -3rem 6rem 10rem;
+    width: 14rem;
+  
+  }
+  .text-2 {
+    color: white;
+    justify-content: center;
+    font-size: 2rem;
+    display: flex;
+    font-weight: 700;
+    margin: 4rem 0rem 1rem 0rem;
+  }
+  
+  .text-3 {
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    color: black;
+    font: icon;
+    margin-left: 17px;
+  }
+  .number {
+    font-size: 3rem;
+    color: rgb(40, 184, 153);
+  }
+
+}
+
+@media screen and (min-width:376px) and (max-width:395px)  {
+  
+  .row{
+    flex-direction: column;
+   }
+   .box {
+    height: 65rem;
+    width: 395px;
+    border-radius: 0rem;
+    background-image: linear-gradient( rgb(254, 144, 158),rgb(243, 203, 121));
+    margin: 0rem 11rem -4rem 0rem;
+    position: absolute;
+    z-index: 2;
+  }
+  .inputs{
+    width: 370px;
+    margin: 3px;
+   overflow: hidden;
+  }
+  .save{
+    width: 370px;
+    margin: 3px;
+
+  }
+  .box-2 {
+    text-align: center;
+    height: 18rem;
+    width: 20rem;
+    color: white;
+    font-size: 1.rem;
+    background-color: white;
+    border-radius: 2rem;
+    margin-left: 23px;
+    margin-top: -70px;
+    
+  }
+  .form{
+    margin-left: -90px;
+    width: 370px;
+  }
+  .buttons{
+    display: flex;
+    margin: 1rem 0rem 0rem -13rem;
+    width: 360px;
+   
+  }
+  .col-6 button {
+    margin: 2rem -3rem 6rem 10rem;
+    width: 14rem;
+  
+  }
+  .text-2 {
+    color: white;
+    justify-content: center;
+    font-size: 2rem;
+    display: flex;
+    font-weight: 700;
+    margin: 4rem 0rem 1rem 0rem;
+  }
+  
+  .text-3 {
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    color: black;
+    font: icon;
+    margin-left: 17px;
+  }
+  .number {
+    font-size: 3rem;
+    color: rgb(40, 184, 153);
+  }
+
+}
+@media screen and (min-width:396px) and (max-width:415px)  {
+
+  .row{
+    flex-direction: column;
+   }
+   .box {
+    height: 65rem;
+    width: 415px;
+    border-radius: 0rem;
+    background-image: linear-gradient( rgb(254, 144, 158),rgb(243, 203, 121));
+    margin: 0rem 11rem -4rem 0rem;
+    position: absolute;
+    z-index: 2;
+  }
+  .inputs{
+    width: 390px;
+    margin: 3px;
+   overflow: hidden;
+  }
+  .save{
+    width: 390px;
+    margin: 3px;
+
+  }
+  .box-2 {
+    text-align: center;
+    height: 18rem;
+    width: 20rem;
+    color: white;
+    font-size: 1.rem;
+    background-color: white;
+    border-radius: 2rem;
+    margin-left: 35px;
+    margin-top: -70px;
+    
+  }
+  .form{
+    margin-left: -90px;
+    width: 370px;
+  }
+  .buttons{
+    display: flex;
+    margin: 1rem 0rem 0rem -13rem;
+    width: 360px;
+   
+  }
+  .col-6 button {
+    margin: 2rem -3rem 6rem 10rem;
+    width: 14rem;
+  
+  }
+  .text-2 {
+    color: white;
+    justify-content: center;
+    font-size: 2rem;
+    display: flex;
+    font-weight: 700;
+    margin: 4rem 0rem 1rem 0rem;
+  }
+  
+  .text-3 {
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    color: black;
+    font: icon;
+    margin-left: 17px;
+  }
+  .number {
+    font-size: 3rem;
+    color: rgb(40, 184, 153);
+  }
+
+}
+
+@media screen and (min-width:416px) and (max-width:425px)  {
+    
+  .row{
+    flex-direction: column;
+   }
+   .box {
+    height: 65rem;
+    width: 425px;
+    border-radius: 0rem;
+    background-image: linear-gradient( rgb(254, 144, 158),rgb(243, 203, 121));
+    margin: 0rem 11rem -4rem 0rem;
+    position: absolute;
+    z-index: 2;
+  }
+  .inputs{
+    width: 400px;
+    margin: 3px;
+   overflow: hidden;
+  }
+  .save{
+    width: 400px;
+    margin: 3px;
+
+  }
+  .box-2 {
+    text-align: center;
+    height: 18rem;
+    width: 20rem;
+    color: white;
+    font-size: 1.rem;
+    background-color: white;
+    border-radius: 2rem;
+    margin-left: 39px;
+    margin-top: -70px;
+    
+  }
+  .form{
+    margin-left: -90px;
+    width: 400px;
+  }
+  .buttons{
+    display: flex;
+    margin: 1rem 0rem 0rem -13rem;
+    width: 360px;
+   
+  }
+  .col-6 button {
+    margin: 2rem -3rem 6rem 10rem;
+    width: 14rem;
+  
+  }
+  .text-2 {
+    color: white;
+    justify-content: center;
+    font-size: 2rem;
+    display: flex;
+    font-weight: 700;
+    margin: 4rem 0rem 1rem 0rem;
+  }
+  
+  .text-3 {
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    color: black;
+    font: icon;
+    margin-left: 17px;
+  }
+  .number {
+    font-size: 3rem;
+    color: rgb(40, 184, 153);
+  }
+
+}
+
+@media screen and (min-width:426px) and (max-width:500px)  {
+
+    .row{
+    flex-direction: column;
+   }
+   .box {
+    height: 65rem;
+    width: 500px;
+    border-radius: 0rem;
+    background-image: linear-gradient( rgb(254, 144, 158),rgb(243, 203, 121));
+    margin: 0rem 11rem -4rem 0rem;
+    position: absolute;
+    z-index: 2;
+  }
+  .inputs{
+    width: 480px;
+    margin-left: 43px;
+   overflow: hidden;
+  }
+  .save{
+    width: 400px;
+    margin-left: 43px;
+
+  }
+  .box-2 {
+    text-align: center;
+    height: 18rem;
+    width: 23rem;
+    color: white;
+    font-size: 1.rem;
+    background-color: white;
+    border-radius: 2rem;
+    margin-left: 64px;
+    margin-top: -70px;
+    
+  }
+  .form{
+    margin-left: -90px;
+    width: 400px;
+  }
+  .buttons{
+    display: flex;
+    margin: 1rem 0rem 0rem -10rem;
+    width: 360px;
+   
+  }
+  .col-6 button {
+    margin: 2rem -3rem 6rem 10rem;
+    width: 14rem;
+  
+  }
+  .text-2 {
+    color: white;
+    justify-content: center;
+    font-size: 2rem;
+    display: flex;
+    font-weight: 700;
+    margin: 4rem 0rem 1rem 0rem;
+  }
+  
+  .text-3 {
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    color: black;
+    font: icon;
+    margin-left: 17px;
+  }
+  .number {
+    font-size: 3rem;
+    color: rgb(40, 184, 153);
+  }
+
 }
